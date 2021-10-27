@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ='stylesheet' href="reset.css">
+    <link rel ='stylesheet' href = './css/styleSheet.css'>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        
+        <form>
+            <h1>CADASTRO DE PESSOAS</h1>
+            <div class = 'info'>
+                <label for = 'name'>Nome:</label>
+                <input id = 'name' data-name type = 'text' name = 'name' placeholder="Nome Completo">
+            </div>
+
+            <div class = 'info'>
+                <label for = 'birth'>Data de Nascimento:</label>
+                <input id = 'birth'  data-birth name = ' birth' type = 'date' placeholder="dd/mm/yyyy"> 
+            </div>
+            <div class = 'info'>
+                <label for = 'category'>Categoria: </label>
+                <select id = 'category' data-category name = 'category'>
+                    <option value = 'emergency' selected>Emergencia</option>
+                    <option value = 'orthopedics'>Ortopedia</option>
+                    <option value = 'pediatrics'>Pediatria</option>
+                    <option value = 'gynecology'>Genecologia</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" class = 'button' data-button value = 'cadastrar paciente'>
+            </div> 
+        </form>
+        <table>
+            <thead>
+                <tr>
+                <th class = "table-title" colspan = "4">LISTA DE CADASTRADOS</th>
+                </tr>
+                <tr>
+                    <th>Nome</th> 
+                    <th>Data de Nascimento</th>
+                    <th>Idade</th>
+                    <th>categoria</th>
+                </tr>
+            </thead>
+            <tbody data-tbody>
+            </tbody>
+        </table>
+    </main>
+    <script src ='./js/main.js'></script>
+    <script src ='./js/Client.js'></script>
+</body>
+</html>
